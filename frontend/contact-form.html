@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact Form Popup</title>
+</head>
+<body>
+
+  <button id="openFormBtn">Book Appointment</button>
+  <br>
+  <div id="showDetails">
+    <h1>Appointment Booking Slots</h1>
+    <ul id="showAppoinments">
+    </ul>
+  </div>
+
+  <div class="contact-form-container" id="contactFormContainer">
+    <span class="close-btn" id="closeFormBtn">&times;</span>
+    <form id="contactForm">
+      <!-- Your contact form fields go here -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="mobile">Mobile:</label>
+      <input type="tel" id="mobile" name="mobile" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+      <!-- Add more fields as needed -->
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div id="updateModal" style="display: none;">
+    <span class="close-btn" id="updateCloseFormBtn">&times;</span>
+    <form id="updateForm">
+      <label for="name">Name:</label>
+      <input type="text" id="updateName" name="name" required>
+      <br>
+      <label for="mobile">Mobile:</label>
+      <input type="tel" id="updateMobile" name="mobile" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="updateEmail" name="email" required>
+      <br>
+      <label for="date">Date:</label>
+      <input type="date" id="updateDate" name="date" required>
+      <br>
+      <label for="time">Time:</label>
+      <input type="time" id="updateTime" name="time" required>
+      <br>
+      <button type="submit">Update</button>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
